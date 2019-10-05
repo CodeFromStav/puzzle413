@@ -7,61 +7,35 @@ gameport.appendChild(renderer.view);
 
 var stage = new PIXI.Container();
 
-var slime = new PIXI.Sprite(PIXI.Texture.fromImage("slime_sprite.png"));
-var sun = new PIXI.Sprite(PIXI.Texture.fromImage("sun_sprite.png"));
+var char_back = new PIXI.Sprite(PIXI.Texture.fromImage("character_back.png"));
 
+char_back.anchor.x = 0.5;
+char_back.anchor.y = 0.5;
+char_back.position.x = 200;
+char_back.position.y = 200;
 
-
-slime.anchor.x = 0.5;
-slime.anchor.y = 0.5;
-slime.position.x = 200;
-slime.position.y = 200;
-
-sun.anchor.x = 0.6;
-sun.anchor.y = 0.6;
-sun.position.x = 220;
-sun.position.y = 220;
-
-stage.addChild(slime);
-stage.addChild(sun);
+stage.addChild(char_back);
 
 
 function keydownEventHandler(e){
-   //slime
+   //char_back
    if(e.keyCode == 87) //w key
    {
-      slime.position.y -=10;
+      char_back.position.y -=10;
    }
    if(e.keyCode == 83) //s key
    {
-      slime.position.y +=10;
+      char_back.position.y +=10;
    }
    if(e.keyCode == 65) //a key
    {
-      slime.position.x -=10;
+      char_back.position.x -=10;
    }
    if(e.keyCode == 68) //d key
    {
-      slime.position.x +=10;
+      char_back.position.x +=10;
    }
-   //Sun
-
-   if(e.keyCode == 37) // left arrow key
-   {
-      sun.position.x -=10; 
-   }
-   if(e.keyCode == 39) // right arrow key
-   {
-      sun.position.x +=10;
-   }
-   if(e.keyCode == 40) // down arrow key
-   {
-      sun.position.y +=10;
-   }
-   if(e.keyCode == 38) // up arrow key
-   {
-      sun.position.y -=10;
-   }
+   
 }
 
 document.addEventListener('keydown', keydownEventHandler);
@@ -74,3 +48,15 @@ function animate()
    renderer.render(stage);
 }
 animate();
+
+// var generator = require('generate-maze');
+ 
+// // Width and height == 4
+// var maze = generator(4);
+ 
+// // Width == 8, height == 4
+// var maze = generator(8, 4);
+ 
+// // Width == 8, height == 4, maze edges are open
+// var maze = generator(8, 4, false);
+ 
