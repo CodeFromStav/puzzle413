@@ -32,7 +32,7 @@
         <key>dpi</key>
         <uint>72</uint>
         <key>dataFormat</key>
-        <string>pixijs4</string>
+        <string>json</string>
         <key>textureFileName</key>
         <filename></filename>
         <key>flipPVR</key>
@@ -175,35 +175,35 @@
             <key>heuristicMask</key>
             <false/>
             <key>defaultPivotPoint</key>
-            <point_f>0,0</point_f>
+            <point_f>0.5,0.5</point_f>
             <key>writePivotPoints</key>
             <false/>
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">character_back.png</key>
-            <key type="filename">character_front.png</key>
-            <key type="filename">character_left.png</key>
-            <key type="filename">character_right.png</key>
+            <key type="filename">character_sprite_frames-1.png</key>
+            <key type="filename">character_sprite_frames-2.png</key>
+            <key type="filename">character_sprite_frames-3.png</key>
+            <key type="filename">character_sprite_frames-4.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>8,8,16,16</rect>
+                <rect>16,16,32,32</rect>
                 <key>scale9Paddings</key>
-                <rect>8,8,16,16</rect>
+                <rect>16,16,32,32</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>character_back.png</filename>
-            <filename>character_front.png</filename>
-            <filename>character_left.png</filename>
-            <filename>character_right.png</filename>
+            <filename>character_sprite_frames-1.png</filename>
+            <filename>character_sprite_frames-2.png</filename>
+            <filename>character_sprite_frames-3.png</filename>
+            <filename>character_sprite_frames-4.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
