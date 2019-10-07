@@ -36,31 +36,23 @@ function animate() {
 animate();
 
 
-// function keydownEventHandler(e){
-   
-//    var frames = [];
 
-//    if(e.keyCode == 87) //w key
-//    {
-//       // PIXI.Texture.fromFrame('character_back.png');
-//       char_back.position.y -=10;
-//    }
-//    if(e.keyCode == 83) //s key
-//    {
-//       // frames.push(PIXI.Texture.fromFrame('character_front.png'));
-//       char_back.position.y +=10;
-//    }
-//    if(e.keyCode == 65) //a key
-//    {
-//       // frames.push(PIXI.Texture.fromFrame('character_left.png'));
-//       char_back.position.x -=10;
-//    }
-//    if(e.keyCode == 68) //d key
-//    {
-//       // frames.push(PIXI.Texture.fromFrame('character_right.png'));
-//       char_back.position.x +=10;
-//    }
-   
-// }
+function keydownEventHandler(e) {
 
-// document.addEventListener('keydown', keydownEventHandler);
+  if (e.keyCode == 87) { // W key
+    character.position.y -= 10;
+  }
+
+  if (e.keyCode == 83) { // S key
+    character.position.y += 10;
+  }
+
+  if (e.keyCode == 65) { // A key
+    character.position.x -= 10;
+  }
+
+  if (e.keyCode == 68) { // D key
+    character.position.x += 10;
+  }
+}
+document.addEventListener('keydown', keydownEventHandler);
