@@ -26,7 +26,7 @@
             </struct>
         </array>
         <key>allowRotation</key>
-        <true/>
+        <false/>
         <key>shapeDebug</key>
         <false/>
         <key>dpi</key>
@@ -181,10 +181,10 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">character_sprite_frames-1.png</key>
-            <key type="filename">character_sprite_frames-2.png</key>
-            <key type="filename">character_sprite_frames-3.png</key>
-            <key type="filename">character_sprite_frames-4.png</key>
+            <key type="filename">sprite_frame1.png</key>
+            <key type="filename">sprite_frame2.png</key>
+            <key type="filename">sprite_frame3.png</key>
+            <key type="filename">sprite_frame4.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -200,10 +200,10 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>character_sprite_frames-1.png</filename>
-            <filename>character_sprite_frames-2.png</filename>
-            <filename>character_sprite_frames-3.png</filename>
-            <filename>character_sprite_frames-4.png</filename>
+            <filename>sprite_frame1.png</filename>
+            <filename>sprite_frame2.png</filename>
+            <filename>sprite_frame3.png</filename>
+            <filename>sprite_frame4.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

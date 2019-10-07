@@ -1,6 +1,6 @@
 {"frames": {
 
-"character_sprite_frames-1.png":
+"sprite_frame1.png":
 {
 	"frame": {"x":0,"y":0,"w":64,"h":64},
 	"rotated": false,
@@ -8,7 +8,7 @@
 	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
 	"sourceSize": {"w":64,"h":64}
 },
-"character_sprite_frames-2.png":
+"sprite_frame2.png":
 {
 	"frame": {"x":64,"y":0,"w":64,"h":64},
 	"rotated": false,
@@ -16,7 +16,7 @@
 	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
 	"sourceSize": {"w":64,"h":64}
 },
-"character_sprite_frames-3.png":
+"sprite_frame3.png":
 {
 	"frame": {"x":128,"y":0,"w":64,"h":64},
 	"rotated": false,
@@ -24,7 +24,7 @@
 	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
 	"sourceSize": {"w":64,"h":64}
 },
-"character_sprite_frames-4.png":
+"sprite_frame4.png":
 {
 	"frame": {"x":192,"y":0,"w":64,"h":64},
 	"rotated": false,
@@ -39,6 +39,6 @@
 	"format": "RGBA8888",
 	"size": {"w":256,"h":64},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:1d5aa93899155e6c72bfc6ea36bc7003:7af1ff1e5adc829fe8208f0285e991b6:a759b6bbc8381ac9c472b28f589ad0d6$"
+	"smartupdate": "$TexturePacker:SmartUpdate:e43810fcded2b90dba80dd2fd255a734:7af1ff1e5adc829fe8208f0285e991b6:a759b6bbc8381ac9c472b28f589ad0d6$"
 }
 }

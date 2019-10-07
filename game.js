@@ -1,6 +1,6 @@
 var gameport = document.getElementById("gameport");
 
-var renderer = PIXI.autoDetectRenderer(400, 400, {backgroundColor: 0x330033});
+var renderer = PIXI.autoDetectRenderer(400, 400, {backgroundColor: 0xADD8E6});
 gameport.appendChild(renderer.view);
 
 var stage = new PIXI.Container();
@@ -15,13 +15,14 @@ function ready() {
   
   var frames = [];
 
-  for (var i=1; i<4; i++) {
+  for (var i=1; i<=4; i++)
+  {
     frames.push(PIXI.Texture.fromFrame('sprite_frame' + i + '.png'));
   }
 
   character = new PIXI.extras.MovieClip(frames);
-  character.scale.x = 4;
-  character.scale.y = 4;
+  character.scale.x = 3;
+  character.scale.y = 3;
   character.position.x = 200;
   character.position.y = 200;
   character.animationSpeed = 0.1;
