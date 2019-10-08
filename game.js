@@ -1,12 +1,18 @@
 var gameport = document.getElementById("gameport");
 
-var renderer = PIXI.autoDetectRenderer(600, 600, {backgroundColor: 0xADD8E6});
+var renderer = PIXI.autoDetectRenderer(600, 600, {backgroundColor: 0x0bb4ce});
 gameport.appendChild(renderer.view);
 
 var stage = new PIXI.Container();
-//var start_page = new PIXI.Container();
-//var end_page = new PIXI.Container();
 
+var start_screen = new PIXI.Sprite(PIXI.Texture.fromImage("background.png"));
+start_screen.scale.x = .8;
+start_screen.scale.y = .8;
+start_screen.position.x = 0;
+start_screen.position.y = -150;
+
+
+stage.addChild(start_screen);
 
 PIXI.SCALE_MODES.DEFAULT = PIXI.SCALE_MODES.NEAREST;
 
@@ -58,9 +64,6 @@ function mouseHandler(e)
    }
   
 }
-
-
-
 
 function animate()
 {
