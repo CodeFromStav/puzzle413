@@ -48,7 +48,7 @@ function mouseHandler(e)
    {
     var new_x = Math.floor(Math.random() * 300) + 50;
     var new_y = Math.floor(Math.random() * 300) + 50;
-    createjs.Tween.get(character.position).to({x: new_x, y: new_y}, 1000, createjs.Ease.bounceOut);
+    createjs.Tween.get(character.position).to({x: new_x, y: new_y}, 500);
 
    }
    else
