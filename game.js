@@ -12,47 +12,44 @@ PIXI.SCALE_MODES.DEFAULT = PIXI.SCALE_MODES.NEAREST;
 
 PIXI.loader
   .add("assets.json")
+  .add("sound.mp3")
   .load(ready);
-
-//var character = new PIXI.Sprite(PIXI.Texture.fromImage("sprite_frame1.png"));
-
-// character.position.x = 100;
-// character.position.y = 100;
-// stage.addChild(character);
-
-
-
 
   function ready()
    {
-  
-  var frames = [];
+    sound = PIXI.audioManager.getAudio("sound.mp3");
 
-  for (var i=1; i<=4; i++)
-  {
-    frames.push(PIXI.Texture.fromFrame('sprite_frame' + i + '.png'));
-  }
+    var frames = [];
 
-  character = new PIXI.extras.MovieClip(frames);
-  character.scale.x = 3;
-  character.scale.y = 3;
-  character.position.x = 200;
-  character.position.y = 200;
-  character.animationSpeed = 0.1;
-  character.play();
-  stage.addChild(character);
+    for (var i=1; i<=4; i++)
+    {
+      frames.push(PIXI.Texture.fromFrame('sprite_frame' + i + '.png'));
+    }
 
-character.interactive = true;
-character.on('mousedown', mouseHandler);
+    character = new PIXI.extras.MovieClip(frames);
+    character.scale.x = 3;
+    character.scale.y = 3;
+    character.position.x = 200;
+    character.position.y = 200;
+    character.animationSpeed = 0.1;
+    character.play();
+    stage.addChild(character);
+
+
+  character.interactive = true;
+  character.on('mousedown', mouseHandler);
 
 }
 function mouseHandler(e)
  {
+  sound.play();
+
    if( character.position.x > 0 && character.position.y > 0)
    {
     var new_x = Math.floor(Math.random() * 300) + 50;
     var new_y = Math.floor(Math.random() * 300) + 50;
     createjs.Tween.get(character.position).to({x: new_x, y: new_y}, 1000, createjs.Ease.bounceOut);
+
    }
    else
    {
